@@ -1,4 +1,4 @@
-package io.github.ismaele77.GeoLocatorApp.dto;
+package io.github.ismaele77.GeoLocatorApp.dto.response;
 
 import java.math.BigDecimal;
 

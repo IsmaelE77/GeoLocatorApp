@@ -1,7 +1,8 @@
 package io.github.ismaele77.GeoLocatorApp.controller;
 
-import io.github.ismaele77.GeoLocatorApp.dto.AddressRequest;
-import io.github.ismaele77.GeoLocatorApp.dto.AddressResponse;
+import io.github.ismaele77.GeoLocatorApp.dto.request.AddressRequest;
+import io.github.ismaele77.GeoLocatorApp.dto.response.AddressResponse;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -13,9 +14,7 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 public class AddressController {
     @PostMapping
-    public ResponseEntity<AddressResponse> createRoom(@RequestBody AddressRequest addressRequest){
-
-
+    public ResponseEntity<AddressResponse> createRoom(@RequestBody @Valid AddressRequest addressRequest){
         return ResponseEntity.ok(new AddressResponse());
     }
 }
