@@ -1,0 +1,21 @@
+spring:
+  config:
+    import: optional:secrets.yaml
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+
+
+logging:
+  level:
+    root: INFO
+    io.github.ismaele77.liveminds: DEBUG
+  file:
+    name: application.log
+    max-history: 1
+    max-size: 10MB
+    clean-history-on-start: true
