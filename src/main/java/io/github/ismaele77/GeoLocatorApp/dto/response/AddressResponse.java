@@ -32,4 +32,20 @@ public class AddressResponse extends RepresentationModel<AddressResponse>{
         this.setLongitude(address.getLongitude());
     }
 
+    public String generateMarkdownContent() {
+        // Generate Markdown content based on addressResponse
+        String markdown = "### Address Details\n\n";
+        markdown += "![logo](https://i.ibb.co/hK5Xn9H/SVGRepo-icon-Carrier.png)\n";
+        markdown += "- Street: " + this.getStreet() + "\n";
+        markdown += "- City: " + this.getCity() + "\n";
+        markdown += "- County: " + this.getCounty() + "\n";
+        markdown += "- State: " + this.getState() + "\n";
+        markdown += "- Country: " + this.getCountry() + "\n";
+        markdown += "- Postal Code: " + this.getPostalCode() + "\n";
+        markdown += "- Latitude: " + this.getLatitude() + "\n";
+        markdown += "- Longitude: " + this.getLongitude() + "\n";
+        return markdown;
+    }
+
+
 }
