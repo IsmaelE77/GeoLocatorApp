@@ -12,6 +12,7 @@ import org.springframework.hateoas.RepresentationModel;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AddressResponse extends RepresentationModel<AddressResponse>{
+    private String displayName;
     private String street;
     private String city;
     private String county;
@@ -22,6 +23,7 @@ public class AddressResponse extends RepresentationModel<AddressResponse>{
     private BigDecimal longitude;
 
     public void mapToAddressResponse(Address address) {
+        this.setDisplayName(address.getDisplayName());
         this.setStreet(address.getStreet());
         this.setCity(address.getCity());
         this.setCounty(address.getCounty());
@@ -36,6 +38,7 @@ public class AddressResponse extends RepresentationModel<AddressResponse>{
         // Generate Markdown content based on addressResponse
         String markdown = "### Address Details\n\n";
         markdown += "![logo](https://i.ibb.co/hK5Xn9H/SVGRepo-icon-Carrier.png)\n";
+        markdown += "\n**Complete Address:** " + this.getDisplayName() + "\n";
         markdown += "- Street: " + this.getStreet() + "\n";
         markdown += "- City: " + this.getCity() + "\n";
         markdown += "- County: " + this.getCounty() + "\n";

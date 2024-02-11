@@ -37,6 +37,7 @@ public class AddressService {
 
         var response = geolocationResponse.get();
         Address address = Address.builder()
+                .displayName(response.getDisplay_name())
                 .street(addressRequest.getStreet())
                 .city(addressRequest.getCity())
                 .county(addressRequest.getCounty())

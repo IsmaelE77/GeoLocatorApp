@@ -20,6 +20,9 @@ public class Address {
     @Column(name = "id", nullable = false)
     private Integer id;
 
+    @Column(name="display_name")
+    private String displayName;
+
     @Column(name = "street")
     private String street;
 
