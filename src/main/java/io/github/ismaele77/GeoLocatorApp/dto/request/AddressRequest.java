@@ -29,5 +29,7 @@ public class AddressRequest {
     @NotNull(message = "sendByEmail must be not null")
     private Boolean sendByEmail;
     @Email(message = "Non valid email")
+    @NotBlank
     private String email;
+
 }
