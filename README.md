@@ -5,6 +5,8 @@ is in the database. If not, fetch it from a third-party API, store it in the dat
 then return it to the frontend. Include an option to email the geolocation results in the
 frontend
 
+### third-party API
+i used [locationiq](https://locationiq.com/) to fetch the geolocation for given address.
 ### important notes
 Please note that hosting is free so you may have to wait a couple of minutes for it to open : 
 > Your free instance will spin down with inactivity, which can delay requests by 50 seconds or more. Upgrade now. - Render.com
