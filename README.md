@@ -14,6 +14,7 @@ Please note that hosting is free so you may have to wait a couple of minutes for
 
 # FrontEnd
 [GeoLocatorApp-Front Repo](https://github.com/IsmaelE77/GeoLocatorApp-Front)
+
 [live preview](https://ismaele77.github.io/GeoLocatorApp-Front/)
 
 # deploy
