@@ -13,8 +13,8 @@ Please note that hosting is free so you may have to wait a couple of minutes for
 [docmuntion](https://geolocator-app-nfcj.onrender.com/swagger-ui/index.html)
 
 # FrontEnd
-[GeoLocatorApp-Front Repo] (https://github.com/IsmaelE77/GeoLocatorApp-Front)
-[live preview] (https://ismaele77.github.io/GeoLocatorApp-Front/)
+[GeoLocatorApp-Front Repo](https://github.com/IsmaelE77/GeoLocatorApp-Front)
+[live preview](https://ismaele77.github.io/GeoLocatorApp-Front/)
 
 # deploy
 you can use the dockerfile from proejct or run:
