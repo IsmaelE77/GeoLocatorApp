@@ -19,4 +19,6 @@ public class GeoLocatorAppApplication {
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
 	}
+
+
 }

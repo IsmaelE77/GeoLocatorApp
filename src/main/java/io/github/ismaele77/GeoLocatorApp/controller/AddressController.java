@@ -18,6 +18,7 @@ import java.util.Optional;
 @RequestMapping("api/v1/address")
 @RequiredArgsConstructor
 @Slf4j
+@CrossOrigin(origins = "*")
 public class AddressController {
 
     @Autowired
